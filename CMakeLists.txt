@@ -1,4 +1,8 @@
 cmake_minimum_required(VERSION 3.1 FATAL_ERROR)
+#C++ version settings
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Find Gazebo and Includes
 find_package(gazebo REQUIRED)
@@ -31,4 +35,3 @@ link_directories( ${GAZEBO_LIBRARY_DIRS} )
 
 add_subdirectory(gzrs)
 add_subdirectory(models)
-
